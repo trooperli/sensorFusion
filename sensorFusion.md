@@ -16,4 +16,4 @@ There are many track-to-detection assignment algorithms. They can be divided int
 
 Data are asyncrhonously collected from each sensor but is timestamped to a common system time. The sensors should be configured to maximize redundancy infront of the vehicle against false readings or failure of sensors while also providing redundant sensing around as much of the vehicle as possible.
 
-![alt text](https://gitlab.gaei.usa/wzhang/perception-software-architecture/blob/master/objectFusion.jpg "Object Fusion")
+![alt text](https://github.com/trooperli/sensorFusion/blob/master/objectFusion.jpg "Object Fusion")
