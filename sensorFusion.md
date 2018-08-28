@@ -25,5 +25,5 @@ Lane boundaries, especially the current lane boundaries, are important reference
 
 <img src="https://latex.codecogs.com/svg.latex?\Large&space;y=ax^{3}+bx^{2}+cx+d" />    (1)
 
-In Eq. (1), a represents curvature derivative, b curvature, c heading angle, and d lateral offset.
+In Eq. (1), a represents curvature derivative, b curvature, c heading angle, and d lateral offset. Thus, the lane fusion becomes using camera to measure the four variables while using adasis map to obtain the state transition of the four variables.
 
