@@ -27,4 +27,4 @@ Lane boundaries, especially the current lane boundaries, are important reference
 
 In Eq. (1), a represents curvature derivative, b curvature, c heading angle, and d lateral offset. Thus, the lane fusion becomes using camera to estimate the four variables through deep learning based lane detection, while using adasis map and ego vehicle motion to obtain the state transition functions of the four variables. 
 
-The state we are tracking is [a, b, c, d] and the measurements from the camera are usually a series of points [(x0, y0), (x1, y1), ... (xN, yN)]. 
+The state we are tracking is [a, b, c, d] and the measurements from the camera are usually a series of points [(x0, y0), (x1, y1), ... (xN, yN)] in the image space. From the adasis map and ego vehicle motion, we could predict the state to the next timestamp.
