@@ -18,4 +18,4 @@ Data are asyncrhonously collected from each sensor but is timestamped to a commo
 
 ![alt text](https://github.com/trooperli/sensorFusion/blob/master/objectFusion.jpg "Object Fusion")
 
-In the figure above, we described how to use the sensor data to obtain object list. The inputs from the radar are range (r), azimuth angle (az), and Doppler frequency shift (fd); those from the camera are longitudinal position x, lateral position y, longitudinal velocity vx, lateral velocity vy, obstacle type, and obstacle dimension (w, h, l).
+In the figure above, we described how to use the sensor data to obtain object list. The inputs from the radar are range (r), azimuth angle (az), and Doppler frequency shift (fd); those from the camera are longitudinal position (x), lateral position (y), longitudinal velocity (vx), lateral velocity (vy), obstacle type, and obstacle dimension (w, h, l).
