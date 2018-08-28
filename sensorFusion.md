@@ -21,9 +21,10 @@ Data are asyncrhonously collected from each sensor but is timestamped to a commo
 In the figure above, we described how to use the sensor data to obtain object list. The inputs from the radar are range (r), azimuth angle (az), and Doppler frequency shift (fd); those from the camera are longitudinal position (x), lateral position (y), longitudinal velocity (vx), lateral velocity (vy), obstacle type, and obstacle dimension (w, h, l).
 
 ## Lane Fusion
-Lane boundaries, especially the current lane boundaries, are important references to help the ego vehicle stay within the lane. There are many approaches to model the lane, the most commonly used one is the clothoid model, which can be described in the following equation:
+Lane boundaries, especially the current lane boundaries, are important references to help the ego vehicle stay within the lane. There are many approaches to model the lane but the most commonly used one is the clothoid model, which can be described in the following equation:
 
 <img src="https://latex.codecogs.com/svg.latex?\Large&space;y=ax^{3}+bx^{2}+cx+d" />    (1)
 
-In Eq. (1), a represents curvature derivative, b curvature, c heading angle, and d lateral offset. Thus, the lane fusion becomes using camera to measure the four variables while using adasis map to obtain the state transition of the four variables.
+In Eq. (1), a represents curvature derivative, b curvature, c heading angle, and d lateral offset. Thus, the lane fusion becomes using camera to estimate the four variables through deep learning based lane detection, while using adasis map and ego vehicle motion to obtain the state transition functions of the four variables. 
 
+The state we are tracking is [a, b, c, d] and the measurements from the camera are usually a series of points [(x0, y0), (x1, y1), ... (xN, yN)]. 
