@@ -19,3 +19,7 @@ Data are asyncrhonously collected from each sensor but is timestamped to a commo
 ![alt text](https://github.com/trooperli/sensorFusion/blob/master/objectFusion.jpg "Object Fusion")
 
 In the figure above, we described how to use the sensor data to obtain object list. The inputs from the radar are range (r), azimuth angle (az), and Doppler frequency shift (fd); those from the camera are longitudinal position (x), lateral position (y), longitudinal velocity (vx), lateral velocity (vy), obstacle type, and obstacle dimension (w, h, l).
+
+## Lane Fusion
+Lane boundaries, especially the current lane boundaries, are important references to help the ego vehicle stay within the lane. There are many approaches to model the lane, the most commonly used one is the clothoid model, which can be described in the following equation:
+
