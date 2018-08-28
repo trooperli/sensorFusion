@@ -23,7 +23,7 @@ In the figure above, we described how to use the sensor data to obtain object li
 ## Lane Fusion
 Lane boundaries, especially the current lane boundaries, are important references to help the ego vehicle stay within the lane. There are many approaches to model the lane, the most commonly used one is the clothoid model, which can be described in the following equation:
 
-<img src="https://latex.codecogs.com/svg.latex?\Large&space;y=ax^{3}+bx^{2}+cx+d" />
+<img src="https://latex.codecogs.com/svg.latex?\Large&space;y=ax^{3}+bx^{2}+cx+d" />  (1)
 
-In the equation above, a represents curvature derivative, b curvature, c heading angle, and d lateral offset.
+In Eq. (1), a represents curvature derivative, b curvature, c heading angle, and d lateral offset.
 
