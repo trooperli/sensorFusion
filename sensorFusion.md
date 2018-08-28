@@ -25,3 +25,5 @@ Lane boundaries, especially the current lane boundaries, are important reference
 
 <img src="https://latex.codecogs.com/svg.latex?\Large&space;y=ax^{3}+bx^{2}+cx+d" />
 
+In the equation above, a represents curvature derivative, b curvature, c heading angle, and d lateral offset.
+
