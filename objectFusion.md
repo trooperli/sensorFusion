@@ -12,7 +12,7 @@ The motion model (state transition function) should close mimic the true motion 
 
 There are two different observation models in accordance to two sensing modalities: radar and camera. The radar directly measures position, direction, and velocity. The camera, with the help from AI and computer vision, measures bounding box in the image plane. Through perspective transfrom from 2-d image space to 3-d ego car coordinate, it can provide position in the ego car coordinate and type (i.e., vehicle, truck, bike, pedestrian, etc.). Optionally, through post-processing, it may also provide velocity, obstacle width, height, length, and .
 
-For the tracking filter, there are many options, most of them are in the kalman filter family. We will use **unscented kalman filter (UKF)** based **interactive multiple model (IMM)** algorithm to incorporate different motion models. E.g., a CA UKF and bicycle model UKF filter bank.
+For the tracking filter, there are many options, most of them are in the kalman filter family and are widely used in the industry. Kalman Filter (KF) is mainly dealing with linear cases (both state transition and measurement functions are linear) while Extended Kalman Filter (EKF) and Unscented Kalman Filter (UKF) deal with non-linear cases. Based on the type of state transition and measurement functions used, we can choose the filter accordingly.  
 
 There are many track-to-detection assignment algorithms. They can be divided into two categories, one is **single-hypothesis tracking (SHT)**, the other is **multiple-hypothesis tracking (MHT)**. Based on different use cases, we can choose the algorithms accordingly. In general, SHT is easier to implement but MHT outperforms when measurements are noisy. 
 
