@@ -1,0 +1,4 @@
+## Practical Consideration
+In the most natural multi-sensor tracking scenario all sensors are synchronized and the complete state vector is updated using all available information simultaneously. However, in practice sensor data is delayed due to internal signal processing algorithms or limited communication bandwidth and will arrive to the fusion in an asynchronous manner. If this is not considered, performance will suffer.
+
+The arrival order of measurements is generally unknown in advance, and in a system with delays it may happen that we receive a so called out-of-sequence measurement. It is possible for a measurement to arrive after the state vector has been updated with information from a newer measurement, i.e., out-of-sequence. In practice, the sensor should record the timestamp when it captures the scene and pass it to fusion modules. 
